@@ -5,7 +5,7 @@ import { Request, Response, NextFunction } from 'express';
  * Custom CORS middleware that explicitly sets all required headers
  */
 export const customCors = (req: Request, res: Response, next: NextFunction) => {
-  const allowedOrigins = ['http://localhost:8080', 'http://localhost:3000'];
+  const allowedOrigins = ['http://localhost:8080', 'http://localhost:3000','https://astonishing-paprenjak-d7708a.netlify.app'];
   const origin = req.headers.origin;
   
   // Set CORS headers
